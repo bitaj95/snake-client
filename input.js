@@ -21,7 +21,6 @@ const handleUserInput = function (keyPressed) {
   if (keyPressed === '\u0003') {
     process.exit();
   }
-
   if (keyPressed === "w") {
     conn.write("Move: up");
   }
@@ -34,7 +33,6 @@ const handleUserInput = function (keyPressed) {
   if (keyPressed === "d") {
     conn.write("Move: right");
   }
-
   if (keyPressed === "z") {
     conn.write("Say: im a w0t?");
   }
@@ -50,12 +48,6 @@ const handleUserInput = function (keyPressed) {
   if (keyPressed === "b") {
     conn.write("Say: proud of myself");
   }
-
-
-
-/*   setInterval(() => {
-    conn.write("Move: up");
-  }, 1000); */
 };
 
 module.exports = {setupInput};
